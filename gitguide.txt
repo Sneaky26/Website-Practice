@@ -1,0 +1,15 @@
+cd <directory>
+git init
+git add .
+git commit -am "initial commit"
+git remote add origin <github url>
+git remote -v
+git push origin master
+
+clear (to clear terminal)
+
+(to update files)
+git status (check status)
+git add .
+git commit -m "update file"
+git push origin master
