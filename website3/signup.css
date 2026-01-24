@@ -40,7 +40,7 @@ li{
     color: white;
 }
 .bg-image{
-    background-image: url(images/RollerCoaster.png);
+    background-image: url(signup-images/RollerCoaster.png);
     background-repeat: no-repeat;
     background-size: cover; 
     background-attachment: fixed;

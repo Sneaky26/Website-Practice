@@ -1,9 +1,10 @@
 html,body {
     margin: 0;
+    background-color: rgb(20, 20, 20);
 }
 .navbar{
     position: absolute;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(27, 28, 34);
     height: 40px;
     width: 100%;
     display: flex;
@@ -29,8 +30,11 @@ h1{
 }
 li{ 
     list-style: none;
+    margin-top: 12px;
+    display: flex;
+    gap: 5px;
 }
-.navbar-pos li a {
+li a {
     text-decoration: none;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
@@ -40,9 +44,43 @@ li{
 .sidebar{
     top: 40px;
     position: absolute;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(27, 28, 34);
     height: 100%;
-    width: 190px;
-    display: inline;
-    justify-content: space-between;
+    width: 170px;
 }
+.sidebar-pos{
+    position: absolute;
+    right: 25px;
+}
+
+.mukhako{
+    border-radius: 100%;
+    border-style: solid;
+}
+.avatar-name{
+    color:white;
+    text-align: center;
+}
+.playing{
+    color: white;
+    font-size: 10px;
+}
+.connection-section {
+    position: absolute; 
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    top: 120px;
+    left: 220px
+}
+.card-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}   
+.avatar-image img {
+  border-radius: 50%;
+}
+
+
