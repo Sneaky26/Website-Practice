@@ -141,6 +141,7 @@ public class jabilee {
             
             mainPanel.add(itemBox);
         }
+
         frame.setLayout(new FlowLayout(FlowLayout.LEFT,75,100));
         frame.add(menuPanelWrapper);
         frame.add(mainPanelWrapper);
