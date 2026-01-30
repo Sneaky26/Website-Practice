@@ -1,0 +1,86 @@
+html,body {
+    margin: 0;
+    background-color: rgb(20, 20, 20);
+}
+.navbar{
+    position: absolute;
+    background-color: rgb(27, 28, 34);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.imagelogo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.logo{
+    margin-left: 20px;
+    border-radius: 50px;
+}
+h1{
+    color: white;
+}
+.navbar-pos{
+   display: flex;
+   align-items: center;
+   gap: 60px;
+   margin-right: 50px;
+}
+li{ 
+    list-style: none;
+    margin-top: 12px;
+    display: flex;
+    gap: 5px;
+}
+li a {
+    text-decoration: none;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.sidebar{
+    top: 40px;
+    position: absolute;
+    background-color: rgb(27, 28, 34);
+    height: 100%;
+    width: 170px;
+}
+.sidebar-pos{
+    position: absolute;
+    right: 25px;
+}
+
+.mukhako{
+    border-radius: 100%;
+    border-style: solid;
+}
+.avatar-name{
+    color:white;
+    text-align: center;
+}
+.playing{
+    color: white;
+    font-size: 10px;
+}
+.connection-section {
+    position: absolute; 
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    top: 120px;
+    left: 220px
+}
+.card-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}   
+.avatar-image img {
+  border-radius: 50%;
+}
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>Roblox</title>
+</head>
+<body>
+    <link rel="stylesheet" href = "signup.css">
+    <nav class = navbar>
+        <div class =imagelogo> 
+            <img src="signup-images/images.jpg" width="50px" height="50px" class=logo>
+            <h1>RoadBlocks</h1>
+        </div>
+        <ul class =navbar-pos>
+            <li><a href = "signup.html">Home</a></li>
+            <li><a href = "about.html">Login</a></li>
+            <li><a href = "games.html">Games</a></li>
+            <li><a href = "projects.html">About Us</a></li>
+        </ul>    
+    </nav>
+    <div class = bg-image>
+        <div class = signup>
+            <h1 class =signup-text>
+                SIGN UP AND START HAVING FUN!
+            </h1>
+            <form class="signup-form">
+                <div class = signup-boxes>
+                    <div>
+                        <label for="birthday">Birthday</label><br>
+                        <input type="date" class = "signup-box" name = "date"><br>
+                    </div>
+                    <div>
+                        <label for="username">Username</label><br>
+                        <input type="text" class = "signup-box" name="name" placeholder="Don't use your real name!"><br>
+                    </div>
+                    <div>
+                        <label for="password">Password</label><br>
+                        <input type="password" class = "signup-box" name="pass" placeholder="Atleast 8 characters"><br>
+                    </div>
+
+                    <div class="signup-gender">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male" class="gender-btn">
+                                <div class="gender-box">
+                                    <img src="signup-images/male.png" alt="Male" width="22px">
+                                </div>
+                            </label>
+                            
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female" class="gender-btn">
+                                <div class="gender-box">
+                                    <img src="signup-images/female.png" alt="Female" width="30px" >
+                                </div>
+                            </label>
+                    </div>
+                    <div class = signup-warning>
+                    <p>By clicking Sign Up, you are agreeing to our Terms
+                    of Use (including arbitration) and acknowledge our 
+                    Privacy Policy.If you are under 18, you agree that 
+                    your parent/guardian permits you to create this 
+                    account and agrees to our Terms of Use.</p>
+                    </div>  
+                    <button type="submit" id="submit">Sign Up</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
