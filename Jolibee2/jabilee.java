@@ -22,6 +22,7 @@ class TransactionDetail{
 }
 
 public class jabilee {
+
     public static void main(String[] args) {
         
         JFrame frame = new JFrame();
@@ -60,7 +61,6 @@ public class jabilee {
             ImageIcon icon = new ImageIcon("Jolibee2/Images/" + img);
             Image scaledIcon = icon.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH);
             ImageIcon scaledImages = new ImageIcon(scaledIcon);
-            
             String name = img.replace(".jpg","").replace(".png","");
             
             // UpperBox
@@ -73,14 +73,19 @@ public class jabilee {
             JTextField quantity = new JTextField(2);
             quantity.setPreferredSize(new Dimension(50,25));
             quantity.setHorizontalAlignment(JTextField.CENTER);
-
+            
+            
             final int[] num = {0};
 
+            // receipt detail
             JLabel receiptDetail = new JLabel();
             receiptDetail.setForeground(Color.WHITE);
             JLabel totalCost = new JLabel();
             totalCost.setForeground(Color.WHITE);
 
+            TransactionDetail transactionDetails = new TransactionDetail(num[0], name, price[index]);
+
+            // minus
             JButton minus = new JButton("-");
             minus.setBackground(Color.red);
             minus.addActionListener(new ActionListener() {
@@ -88,7 +93,6 @@ public class jabilee {
                     if (num[0] > 0){
                         num[0]--;
                         String text = Integer.toString(num[0]);
-                        TransactionDetail transactionDetails = new TransactionDetail(num[0], name, price[index]);
                         receiptDetail.setIcon(scaledImages);
                         receiptDetail.setText(transactionDetails.getQuantity()+ "x Name: " + transactionDetails.getName()+ " Price: "+ transactionDetails.getPrice());
                         String total = Double.toString(transactionDetails.getTotal());
@@ -104,6 +108,7 @@ public class jabilee {
                 }
             });
             
+            // plus
             JButton plus = new JButton("+");
             plus.setBackground(Color.green);
             plus.addActionListener(new ActionListener() {
@@ -112,8 +117,8 @@ public class jabilee {
                     receiptDetail.setVisible(true);
                     String text = Integer.toString(num[0]);
                     quantity.setText(text); 
+                    receiptDetail.setIcon(scaledImages);
                     minus.setEnabled(true);
-                    TransactionDetail transactionDetails = new TransactionDetail(num[0], name, price[index]);
                     receiptDetail.setText(transactionDetails.getQuantity()+ "x Name: " + transactionDetails.getName()+ " Price: $"+ transactionDetails.getPrice());
                     String total = Double.toString(transactionDetails.getTotal());
                     totalCost.setText("Total Cost: $" + total);
@@ -121,6 +126,8 @@ public class jabilee {
                     receiptPanel.add(totalCost);     
                 }
             });
+
+            
 
             // Quantity Limiter
             quantity.addKeyListener(new KeyAdapter() {
@@ -142,7 +149,6 @@ public class jabilee {
             mainPanel.add(itemBox);
         }
          
-
         
         frame.setLayout(new FlowLayout(FlowLayout.LEFT,75,100));
         frame.add(menuPanelWrapper);
