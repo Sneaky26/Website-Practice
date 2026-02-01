@@ -1,0 +1,24 @@
+
+
+
+
+Item Box
+     plus button
+     - everytime i click it add num ++
+     - set the num to the quantity 
+     - automatically updates the value and image to the receipt list
+     minus button
+     - everytime i click it minus num --
+     - set the num to the quantity
+     - automatically updates the value and image to the receipt list
+     - when 0 hide/remove item from list
+     - when it reaches zero , cant click button
+
+Receipt Panel
+     Receipt Label
+	- Show "0 items" message when receipt is empty
+	Sub Total 
+
+	Grand Total 
+		
+     
