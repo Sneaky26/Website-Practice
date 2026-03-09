@@ -4,7 +4,7 @@ git add .
 git commit -am "initial commit"
 git remote add origin <github url>
 git remote -v
-git push origin master
+git push origin main
 
 clear (to clear terminal)
 
@@ -12,4 +12,6 @@ clear (to clear terminal)
 git status (check status)
 git add .
 git commit -m "update file"
-git push origin master
+git push origin main  
+//main --our main branch
+//origin -- default name for your remote repo
